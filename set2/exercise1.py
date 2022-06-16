@@ -14,10 +14,10 @@ import platform
 
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
-
+# This is a list
 some_words = ["what", "does", "this", "line", "do", "?"]
-
-for word in some_words:
+# I think this will print all the terms listed in some_words.
+for word in some_words: 
     print(word)
 
 for x in some_words:
