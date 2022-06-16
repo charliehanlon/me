@@ -18,7 +18,7 @@ print("hello! Let's get started")  # it printed "hello! Let's get started"
 some_words = ["what", "does", "this", "line", "do", "?"]
 # I think this will print all the terms listed in some_words.
 for word in some_words: 
-    print(word)
+    print(word) #it printed all the terms.
 
 for x in some_words:
     print(x)
