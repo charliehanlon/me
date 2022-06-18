@@ -16,17 +16,21 @@ import platform
 print("hello! Let's get started")  # it printed "hello! Let's get started"
 # This is a list
 some_words = ["what", "does", "this", "line", "do", "?"]
+...
 # I think this will print all the terms listed in some_words.
 for word in some_words: 
-    print(word) #it printed all the terms.
-
+    print(word) #it printed all the terms individually.
+...
+# Something different to "word"
 for x in some_words:
-    print(x)
-
-print(some_words)
-
+    print(x) #it printed all the terms individually, same as "word".
+...
+#it will print the whole line.
+print(some_words) #it printed the whole "[]"
+...
+# it will print to say more than 3.
 if len(some_words) > 3:
-    print("some_words contains more than 3 words")
+    print("some_words contains more than 3 words") # it printed the "(xxx)"
 
 
 def usefulFunction():
