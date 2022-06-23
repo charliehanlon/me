@@ -42,7 +42,7 @@ def add_5(a_number):
         return a_number plus five
     except expressed in python, not english
     """
-    the_answer = None
+    the_answer = a_number + 5
     return the_answer
 
 
@@ -51,7 +51,7 @@ def adder(a_number, another_number):
 
     Same as above, but with any two numbers.
     """
-    the_answer = None
+    the_answer = a_number + another_number
     return the_answer
 
 
@@ -95,7 +95,7 @@ def shout_with_a_number(a_string, a_number):
           challenge, see if you can make the test pass with at least two ways
           of doing the same job.
     """
-    the_answer = None
+    the_answer = f"hello {a_number}"
     return the_answer
 
 
