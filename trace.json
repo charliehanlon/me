@@ -1,7 +1,7 @@
 [
   {
     "of_total": 12,
-    "mark": 10,
+    "mark": 11,
     "results": [
       {
         "value": 1,
@@ -20,7 +20,7 @@
         "name": "Exercise1: Print 'Hello world!'"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Lab book entry completed"
       },
       {
