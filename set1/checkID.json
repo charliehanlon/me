@@ -1,28 +1,28 @@
 {
     "architecture": [
         "64bit",
-        ""
+        "WindowsPE"
     ],
-    "machine": "arm64",
-    "os_name": "posix",
-    "platform": "macOS-12.4-arm64-arm-64bit",
-    "processor": "arm",
-    "release": "21.5.0",
-    "system": "Darwin",
+    "machine": "AMD64",
+    "os_name": "nt",
+    "platform": "Windows-10-10.0.19043-SP0",
+    "processor": "AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD",
+    "release": "10",
+    "system": "Windows",
     "uname": [
-        "Darwin",
-        "charlies-MacBook-Pro.local",
-        "21.5.0",
-        "Darwin Kernel Version 21.5.0: Tue Apr 26 21:08:37 PDT 2022; root:xnu-8020.121.3~4/RELEASE_ARM64_T6000",
-        "arm64",
-        "arm"
+        "Windows",
+        "DESKTOP-R1LJ8HB",
+        "10",
+        "10.0.19043",
+        "AMD64",
+        "AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD"
     ],
-    "version": "Darwin Kernel Version 21.5.0: Tue Apr 26 21:08:37 PDT 2022; root:xnu-8020.121.3~4/RELEASE_ARM64_T6000",
+    "version": "10.0.19043",
     "python_build": [
-        "v3.10.5:f377153967",
-        "Jun  6 2022 12:36:10"
+        "tags/v3.10.5:f377153",
+        "Jun  6 2022 16:14:13"
     ],
-    "python_compiler": "Clang 13.0.0 (clang-1300.0.29.30)",
+    "python_compiler": "MSC v.1929 64 bit (AMD64)",
     "python_implementation(": "CPython",
     "python_version(": "3.10.5",
     "python_version_tuple": [
@@ -30,5 +30,5 @@
         "10",
         "5"
     ],
-    "cpu_count": 10
+    "cpu_count": 12
 }
