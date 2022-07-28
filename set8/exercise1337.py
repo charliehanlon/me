@@ -145,7 +145,16 @@ def set_it_on_fire(input_string="very naughty boy") -> str:
     TIP: make sure that you have a 🔥 on both ends of the string.
     """
 
-    return None
+    input_string = input_string.upper()
+    lst = list(input_string)
+    ls = []
+    for i in lst:
+        i = f"🔥{i}"
+        ls.append(i)
+    ls.append('🔥')
+    st = "".join(ls)
+
+    return st
 
 
 def pet_filter(letter="a") -> List:
@@ -163,7 +172,11 @@ def pet_filter(letter="a") -> List:
     ]
     # fmt: on
     filtered = []
-
+    length = len(pets)
+    for i in range(length):
+        if letter in pets[i]:
+            item = str(pets[i])
+            filtered.append(item)
     return filtered
 
 
