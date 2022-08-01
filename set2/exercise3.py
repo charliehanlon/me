@@ -1,28 +1,22 @@
-# -*- coding: UTF-8 -*-
+"""x`# -*- coding: UTF-8 -*-"""
 """Modify each function until the tests pass."""
-
-
-def is_odd(a_number): 
+from ast import Return, While
+from shutil import move
+from numpy import append, full
+def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
-
     Look into modulo division using the '%' operator as one way of doing this.
-
     e.g. 4 % 2 = 0
         13 %12 = 1
          3 % 2 = 1
-
     So if a_number modulo two is zero, then it's even.
     """
-
-    if a_number % 2 == is_odd:
-        return True
+    if(a_number % 2) == 0:
+     return False
     else:
-        return False
-
-
+        return True
 def fix_it(moves=True, should_move=True):
     """Decide what to do.
-
     Using the engineering flowchart (in week2 folder of the CODE1161-2019
     repo engineeringFlowchart.png) for the rules, return the apropriate
     response to the input parameters.
@@ -31,16 +25,17 @@ def fix_it(moves=True, should_move=True):
     "WD-40"
     "Duct Tape"
     "No Problem"
-
     Most people write this function with 4 return statements.
     As an extra challenge, see if you can get that down to three.
     """
-    return None
-
-
+    if moves and should_move or not moves and not should_move:
+        return "No Problem"
+    elif moves and not should_move:
+        return "Duct Tape"
+    elif not moves and should_move:
+        return "WD-40"
 def loops_preview():
     """Make 8 poops.
-
     Using a for loop
     return a list of 8 items, each one a string with exacly one 💩 in it.
     E.g.: ['💩', '💩', '💩', '💩', '💩', '💩', '💩', '💩']
@@ -49,34 +44,30 @@ def loops_preview():
     for i in range(8):
         choc_list.append("💩")
     return choc_list
-
-
 def loops_1a():
     """Make 10 stars.
-
     Using a for loop
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
-
-
+    star_list = []
+    for i in range(10):
+        star_list.append("*")
+    return star_list
 def loops_1c(number_of_items=5, symbol="#"):
     """Respond to variables.
-
     Return a list of number_of_items items, each one a
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
-
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    return None
-
-
+    your_list = []
+    for i in range(number_of_items):
+        your_list.append(symbol)
+    return your_list
 def loops_2():
     """Make a big square starfield.
-
     return a list of 10 items, each one a list of 10 items,
     each one of those, a string with exacly one star in it.
     E.g.: [
@@ -92,12 +83,15 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
-
-
+    starfield = []
+    for i in range(10):
+        star_list = []
+        for j in range(10):
+            star_list.append("*")
+        starfield.append(star_list)
+    return starfield
 def loops_3():
     """Make a rising block of numbers.
-
     Return this:
     [
         ['0', '0', '0', '0', '0', '0', '0', '0', '0', '0'],
@@ -116,12 +110,16 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
-
-
+    full_list = []
+    for x in range(10):
+        base_list = []
+        base_list.clear
+        for y in range(10):
+            base_list.append(str(x))
+        full_list.append(base_list)
+    return full_list
 def loops_4():
     """Make a block of numbers that rises left to right.
-
     Return this:
     [
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
@@ -136,12 +134,15 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
-
-
+    full_list = []
+    for x in range(10):
+        base_list = []
+        for y in range(10):
+            base_list.append(str(y))
+        full_list.append(base_list)
+    return full_list
 def loops_5():
     """Make the coordinates of the block.
-
     Return this:
     [
       ['(i0, j0)', '(i0, j1)', '(i0, j2)', '(i0, j3)', '(i0, j4)'],
@@ -155,7 +156,6 @@ def loops_5():
       ['(i8, j0)', '(i8, j1)', '(i8, j2)', '(i8, j3)', '(i8, j4)'],
       ['(i9, j0)', '(i9, j1)', '(i9, j2)', '(i9, j3)', '(i9, j4)']
     ]
-
     TIP:
     If you've got num_bottles, e.g. num_bottles = 8
     You can construct strings either by concatinating them:
@@ -166,12 +166,15 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    return None
-
-
+    full_list = []
+    for i in range(10):
+        base_list = []
+        for j in range(5):
+            base_list.append(f"(i{i}, j{j})")
+        full_list.append(base_list)
+    return full_list
 def loops_6():
     """Make a wedge of numbers.
-
     Return this:
     [
       ['0'],
@@ -189,12 +192,15 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
-
-
+    full_list = []
+    for i in range(10):
+        base_list = []
+        for j in range(i + 1):
+            base_list.append(str(j))
+        full_list.append(base_list)
+    return full_list
 def loops_7():
     """Make a pyramid.
-
     Return this:
     [
         [' ', ' ', ' ', ' ', '*', ' ', ' ', ' ', ' '],
@@ -213,12 +219,22 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
-
-
+    pyramid = []
+    space_no = 4
+    ast_no = 1
+    for i in range(5):
+        row = []
+        for j in range(9):
+            if j < space_no or j >= space_no + ast_no:
+                row.append(" ")
+            else:
+                row.append("*")
+        pyramid.append(row)
+        space_no -= 1
+        ast_no += 2
+    return pyramid
 def little_printer(some_kind_of_list, exercise_name):
     """Help to see what's going on.
-
     This is a helper function that prints your
     results to check that they are tidy.
     Note: You don't have to do anything with it.
@@ -236,8 +252,6 @@ def little_printer(some_kind_of_list, exercise_name):
             print()
     else:
         print(exercise_name, "maybe you haven't got to this one yet?")
-
-
 if __name__ == "__main__":
     # this section does a quick test on your results and prints them nicely.
     # It's NOT the official tests, they are in tests.py as usual.
@@ -257,4 +271,4 @@ if __name__ == "__main__":
     little_printer(loops_4(), "loops_4")
     little_printer(loops_5(), "loops_5")
     little_printer(loops_6(), "loops_6")
-    little_printer(loops_7(), "loops_7")
+    little_printer(loops_7()
