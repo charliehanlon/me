@@ -1,5 +1,6 @@
 # -*- coding: UTF-8 -*-
 
+from matplotlib.pyplot import hist
 import requests
 
 """REFACTORING
@@ -62,3 +63,4 @@ if __name__ == "__main__":
     pyramid = wordy_pyramid()
     for word in pyramid:
         print(word)
+hist
