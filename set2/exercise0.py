@@ -17,6 +17,9 @@ obvious answer, that's because it is!
 """
 
 
+from pandas import read_json
+
+
 def add_1(a_number):
     """Return a number that is 1 bigger than number given.
 
@@ -151,3 +154,6 @@ if __name__ == "__main__":
     minitest(really_shout, ["!"], "!!")
     minitest(shout_with_a_number, ("hello", 42), "HELLO 42")
     print("p.s. see note above these results")
+
+
+
