@@ -1,6 +1,9 @@
+from platform import python_version
+
+
+python_version
 """x`# -*- coding: UTF-8 -*-"""
 """Modify each function until the tests pass."""
-from ast import Return, While
 from shutil import move
 from numpy import append, full
 def is_odd(a_number):
@@ -271,4 +274,4 @@ if __name__ == "__main__":
     little_printer(loops_4(), "loops_4")
     little_printer(loops_5(), "loops_5")
     little_printer(loops_6(), "loops_6")
-    little_printer(loops_7()
+    little_printer(loops_7())
