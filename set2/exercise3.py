@@ -2,7 +2,7 @@
 """Modify each function until the tests pass."""
 
 
-def is_odd(a_number):
+def is_odd(a_number): 
     """Return True if a_number is odd, and False if a_number is even.
 
     Look into modulo division using the '%' operator as one way of doing this.
@@ -13,7 +13,11 @@ def is_odd(a_number):
 
     So if a_number modulo two is zero, then it's even.
     """
+<<<<<<< HEAD
     return a_number % 2 == is_odd:
+=======
+    if a_number % 2 == is_odd:
+>>>>>>> 7013d35d3fe14fab5162747631d52aa9cc1b9d65
            return True
     else:
            return False
