@@ -17,11 +17,10 @@ def loop_ranger(start, stop=None, step=1):
     Look up for how range() works in the python docs. You could  answer this
     with just the range function, but we'd like you to do it the long way.
     """
-    
     new_list = []
 
     for i in range(start, stop, step):
-        new_list.append()
+        new_list.append(i)
 
     return new_list
 
